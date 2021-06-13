@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>theazfaryaakob website</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt" style="text-align: center"></div>
+<div class="main">
+<div class="logo">
+<img src="../images/logo.png">
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li class="active"><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center" style="color:#fff; font-size: 45px";>EXPERIENCE</h1>
+<br>
+<table class="center">
+<tr>
+<td colspan="3" align="center" cellpadding="3" cellspacing="3"></td>
+</tr>
+<tr>
+<th>COMPANY</th>
+</tr>
+<tr align="center">
+<td>7 ELEVEN MALAYSIA BHD</td>
+</tr>
+<tr>
+<th>JOB</th>
+</tr>
+<tr align="center">
+<td>STORE ASSOCIATE</td>
+</tr>
+<tr>
+<th>DESCRIPTION</th>
+</tr>
+<tr align="center">
+<td>Employees maintain daily operations to keep 7-Eleven stores operating smoothly. Responsibilities include keeping a clean, safe environment for patrons, ringing customer purchases using electronic cash registers, and giving correct change. Additional duties consist of forecasting, ordering, and stocking merchandise throughout the store.</td>
+</tr>
+<tr>
+<th>DURATION</th>
+</tr>
+<tr align="center">
+<td>DECEMBER 2017 - JANUARY 2019</td>
+</tr>
+</table>
+<div class="footer">
+<a>theazfaryaakob WEBSITE ©2021. ALL RIGHTS RESERVED</a>
+</div>
+</header>
+</body>
+</html>

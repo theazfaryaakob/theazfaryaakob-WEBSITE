@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>theazfaryaakob website</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt" style="text-align: center"></div>
+<div class="main">
+<div class="logo">
+<img src="../images/logo.png">
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li class="active"><a href="about.html">ABOUT</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center" style="color:#fff; font-size: 45px";>ABOUT</h1>
+<div class="container">
+<div class="profile">
+<img src="../images/profile.png" alt="Profile Picture">
+</div>
+<div class="detail">
+<h2 style="border: 5px">NAME: MUHAMMAD AZFAR BIN YAAKOB</h2>
+<h2>STUDENT ID: 2019510729</h2>
+<h2>GROUP: KIM1105A</h2>
+<h2>COURSE CODE: IMD311</h2>
+<h2>LECTURER: ENCIK MOHD FIRDAUS BIN MOHD HELMI</h2>
+<h2>ASSESSMENT: INDIVIDUAL PROJECT</h2>
+<br>
+<h2>SOCIAL MEDIA:</h2>
+<a href="https://www.facebook.com/theazfaryaakob"><img src="../images/facebooklogo.png" style="margin-left: 20px; margin-right: 10px; margin-top: 10px;" width="50" height="50"></a> <a href="https://www.instagram.com/theazfaryaakob/"><img src="../images/instagramlogo.png" width="50" height="50"></a>
+</div>
+<div class="footer">
+<a>theazfaryaakob WEBSITE ©2021. ALL RIGHTS RESERVED</a>
+</div>
+</header>
+</body>
+</html>

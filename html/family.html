@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>theazfaryaakob website</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt" style="text-align: center"></div>
+<div class="main">
+<div class="logo">
+<img src="../images/logo.png">
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li class="active"><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center" style="color:#fff; font-size: 45px";>FAMILY</h1>
+<br>
+<div class="container">
+<div class="family">
+<img src="../images/myfamily.jpg" alt="Family Picture" width="550" height="375" border="5">
+</div>
+<div class="description">
+<br>
+<h2 style="border: 5px">FATHER</h2>
+<h2>NAME: YAAKOB BIN HUSIN</h2>
+<h2>AGE: 60 YEARS OLD</h2>
+<br>
+<h2 style="border: 5px">MOTHER</h2>
+<h2>NAME: RABAIEE BINTI HASSAN</h2>
+<h2>AGE: 55 YEARS OLD</h2>
+<br>
+<h2 style="border: 5px">BROTHER</h2>
+<h2>NAME: MUHAMMAD AIMAN BIN YAAKOB</h2>
+<h2>AGE: 28 YEARS OLD</h2>
+<br>
+<h2 style="border: 5px">BROTHER</h2>
+<h2>NAME: MUHAMMAD AMAR BIN YAAKOB</h2>
+<h2>AGE: 26 YEARS OLD</h2>
+<br>
+</div>
+<div class="footer">
+<a>theazfaryaakob WEBSITE ©2021. ALL RIGHTS RESERVED</a>
+</div>
+</header>
+</body>
+</html>

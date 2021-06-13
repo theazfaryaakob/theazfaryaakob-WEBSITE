@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>theazfaryaakob website</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt" style="text-align: center"></div>
+<div class="main">
+<div class="logo">
+<img src="../images/logo.png">
+</div>
+<ul>
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="education.html">EDUCATION</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+<div class="title">
+<h1>WELCOME TO</h1>
+<h1>theazfaryaakob WEBSITE</h1>
+</div>
+<div class="button">
+<a href="about.html" class="btn">LEARN MORE</a>
+</div>
+<div class="footer">
+<a>theazfaryaakob WEBSITE ©2021. ALL RIGHTS RESERVED</a>
+</div>
+</header>
+</body>
+</html>

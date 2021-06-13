@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>theazfaryaakob website</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body>
+<header>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function checkTime(i)
+{
+if (i<10)
+{
+i="0" + i;
+}
+return i;
+}
+</script>
+<body onload="startTime()">
+<div id="txt" style="text-align: center"></div>
+<div class="main">
+<div class="logo">
+<img src="../images/logo.png">
+</div>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li class="active"><a href="education.html">EDUCATION</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="about.html">ABOUT</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 align="center" style="color:#fff; font-size: 45px";>EDUCATION</h1>
+<br>
+<table class="center">
+<tr>
+<td colspan="5" align="center" cellpadding="3" cellspacing="3"></td>
+</tr>
+<tr>
+<th>EDUCATION LEVEL</th>
+<th>INSTITUTION</th>
+<th>YEAR</th>
+<th>COURSE</th>
+<th>RESULT</th>
+</tr>
+<tr align="center">
+<td>KINDERGARTEN</td>
+<td>TADIKA KEMAS BUTTERWORTH</td>
+<td>2005-2006</td>
+<td>-</td>
+<td>PASS</td>
+</tr>
+<tr align="center">
+<td>PRIMARY SCHOOL</td>
+<td>SEK KEB ST MARK BUTTERWOTH</td>
+<td>2007-2012</td>
+<td>-</td>
+<td>2A 3B</td>
+</tr>
+<tr align="center">
+<td>SECONDARY SCHOOL</td>
+<td>SEK MEN KEB PERMATANG TOK JAYA</td>
+<td>2013-2017</td>
+<td>SOCIAL SCIENCE</td>
+<td>2A 4B 1C 1D</td>
+</tr>
+<tr align="center">
+<td>FORM 6</td>
+<td>DESA MURNI COLLEGE</td>
+<td>2019</td>
+<td>SOCIAL SCIENCE</td>
+<td>GPA 3.0</td>
+</tr>
+<tr align="center">
+<td>DIPLOMA</td>
+<td>UNIVERSITI TEKNOLOGI MARA KEDAH</td>
+<td>2019-2021</td>
+<td>INFORMATION MANAGEMENT</td>
+<td>GPA 3.54</td>
+</tr>
+</table>
+<div class="footer">
+<a>theazfaryaakob WEBSITE ©2021. ALL RIGHTS RESERVED</a>
+</div>
+</header>
+</body>
+</html>
